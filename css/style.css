@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: arial;
+  white-space: nowrap;
+  text-align: center;
+  cursor: default;
+}
+
+body:before {
+  content: '';
+  width: 0;
+  height: 100%;
+}
+
+body.caps-lock {
+  text-transform: uppercase;
+}
+
+main {
+  max-width: 900px;
+  font-size: 0;
+  white-space: normal;
+}
+
+main,
+body:before {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+main span {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+
+main span:hover {
+  background: #ddd;
+}
+
+form {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
