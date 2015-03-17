@@ -5,10 +5,11 @@ body {
 
 body {
   margin: 0;
-  font-family: arial;
-  white-space: nowrap;
-  text-align: center;
   cursor: default;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
 }
 
 body:before {
@@ -37,8 +38,8 @@ main span {
   display: inline-block;
   margin-bottom: 5px;
   padding: 10px 20px;
-  font-size: 40px;
   cursor: pointer;
+  font-size: 40px;
   transition: background .2s ease;
 }
 
