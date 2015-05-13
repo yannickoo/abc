@@ -11,7 +11,7 @@
       for (var i = 0; i < chars.length; i++) {
         chars[i].addEventListener('click', function(e) {
           var char = this.getAttribute('data-char'),
-              text = char ? char : this.innerText;
+              text = char ? char : this.textContent;
 
           input.value = input.value + text;
           input.focus();
@@ -59,7 +59,7 @@
       var keyCode = e.keyCode,
           char = String.fromCharCode(keyCode).toLowerCase(),
           keyButton = [].filter.call(document.querySelectorAll('main span'), function(input) {
-            return input.innerText === char || input.getAttribute('data-char') === char;
+            return input.textContent === char || input.getAttribute('data-char') === char;
           });
 
       if (keyButton.length) {
