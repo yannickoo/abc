@@ -13,6 +13,7 @@
           var char = this.getAttribute('data-char'),
               text = char ? char : this.textContent;
 
+          text = document.body.classList.contains('caps-lock') ? text.toUpperCase() : text;
           input.value = input.value + text;
           input.focus();
 
